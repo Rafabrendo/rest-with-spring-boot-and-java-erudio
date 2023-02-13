@@ -3,14 +3,33 @@ package br.com.erudio.model;
 import java.io.Serializable;
 import java.util.Objects;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "person")
 public class Person implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY) //VAI SOMAR 1 AO ID A CADA PERSISTENCIA
 	private Long id;
+	
+	@Column(name = "fist_name", nullable = false, length = 80) //length = 80 -> maximo de 80 caracteres nesse campo.
 	private String firstName;
+	
+	@Column(name = "last_name", nullable = false, length = 80) //nullable = false -> esse campo não pode ser null
 	private String lastName;
+	
+	@Column(nullable = false, length = 100)
 	private String address;
+	
+	@Column(nullable = false, length = 6)
 	private String gender;
 	
 	public Person() {}
