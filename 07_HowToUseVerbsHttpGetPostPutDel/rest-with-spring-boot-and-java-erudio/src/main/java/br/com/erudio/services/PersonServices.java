@@ -1,8 +1,6 @@
 package br.com.erudio.services;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +37,7 @@ public class PersonServices {
 		
 		logger.info("Finding one person!");
 		
-		Person person = new Person();
+		//Person person = new Person();
 		
 		//mocking
 		//person.setId(counter.incrementAndGet());
