@@ -128,7 +128,7 @@
 			   <configuration>
 			      <url>jdbc:mysql://localhost:3306/rest_with_spring_boot_erudio?useTimezone=true&amp;serverTimezone=UTC&amp;useSSL=false</url>
 			      <user>root</user>
-			      <password>Raf1ldes#</password>
+			      <password>Rafildes#</password>
 			   </configuration>
 			   <dependencies>
 			      <dependency>
