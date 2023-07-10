@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>rest-with-spring-boot-and-java-erudio</name>
 	<properties>
-		<java.version>19</java.version>
+		<java.version>17</java.version>
 		<dozer.version>6.4.0</dozer.version>
 		<springdoc.version>2.0.2</springdoc.version>
 		<testcontainers.version>1.16.3</testcontainers.version>
@@ -122,7 +122,7 @@
 			   <configuration>
 			      <url>jdbc:mysql://localhost:3306/rest_with_spring_boot_erudio?useTimezone=true&amp;serverTimezone=UTC&amp;useSSL=false</url>
 			      <user>root</user>
-			      <password>Raf1ldes#</password>
+			      <password>Rafildes#</password>
 			   </configuration>
 			   <dependencies>
 			      <dependency>
